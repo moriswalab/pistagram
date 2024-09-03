@@ -1,0 +1,276 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --color-white:hsl(252,30%,100%);
+    --color-light:hsl(252,30%,95%);
+    --color-gray:hsl(252,15%,65%);
+    --color-primary:hsl(252,75%,60%);
+    --color-secondary:hsl(252,100%,90%);
+    --color-success:hsl(120,95%,65%);
+    --color-danger:hsl(0,95%,65%);
+    --color-dark:hsl(252,30%,17%);
+    --color-black:hsl(252,30%,10%);
+   
+
+    --border-radius: 2rem;
+    --card-border-radius: 1rem;
+    --btn-padding: 0.6rem 1rem;
+    --search-padding: 0.6rem 1rem;
+    --card-padding: 1rem;
+
+    --sticky-top-left:5.4rem;
+    --sticky-top-right:-18rem;
+
+
+
+}
+
+*,::before, *::after{
+padding: 0;
+margin: 0;
+outline: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+border: none;
+
+}
+body{
+font-family: "popppins",sans-serif;
+color: var(--color-dark);
+background: var(--color-light);
+overflow-x: hidden;
+}
+
+.profile-photo{
+    width: 2.7rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+img{
+    display: block;
+    width: 100%;
+}
+.btn{
+display: inline-block;
+padding: var(--btn-padding);
+font-weight: 500;
+border-radius: var(--border-radius);
+cursor: pointer;
+transition: all 300ms ease;
+font-size: 0.9rem;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+.btn-primary{
+    background: var(--color-primary);
+    color: white;
+}
+.text-bold{
+    font-weight: 500;
+}
+.text-muted{
+    color: var(--color-gray);
+}
+.text-dark{
+    color: var(--color-dark);
+}
+/* navigation bar */
+
+nav{
+    width: 100%;
+    background: var(--color-white);
+    padding: 0.7rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-bar{
+ background: var(--color-light);
+ border-radius: var(--border-radius);
+ padding: var(--search-padding);
+ display: flex;
+}
+.bx-search img{
+width: 20px;
+}
+.search-bar input[type="search"]{
+     background: transparent;
+     width:30vw;
+     margin-left:1rem ;
+     font-size:0.9rem ;
+     color: var(--color-dark);
+}
+nav .search-bar input[type="search"]::placeholder{
+    color: var(--color-gray);
+}
+nav .create{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+/* Style the tab */
+.tab {
+    margin-top: 200px;
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    margin-top: 200px;
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+.right .messages .message{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: start;
+    cursor: pointer;
+}
+
+
+/* ***************************** */
+
+.left .sidebar-2{
+    margin-top: 1rem;
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+}
+.left .sidebar-2 .menu-item-2{
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    cursor: pointer;
+    transition: all 300ms ease;
+    position: relative;
+}
+.left .sidebar-2 .menu-item-2:hover{
+    background: var(--color-light);
+}
+.left .sidebar-2 i{
+    font-size: 1.4rem;
+    color: var(--color-gray);
+    margin-left: 2rem;
+    position: relative;
+}
+.left .sidebar-2 i .Notification-count-2{
+background: var(--color-danger);
+color: white;
+font-size: 0.7rem;
+width: fit-content;
+padding: 0.1rem 0.5rem;
+position: absolute;
+top: -0.2rem;
+right: -0.3rem;
+border-radius: 0.9rem;
+}
+.left .sidebar-2 h3{
+    margin-left: 1.5rem;
+    font-size: 1rem;
+    color: var(--color-dark);
+}
+.left .sidebar-2 .active{
+background: var(--color-light);
+}
+.left .sidebar-2 .active h3,.left .sidebar-2 .active i{
+    color: var(--color-primary);
+}
+.left .sidebar-2 .active::before{
+    content: "";
+    display: block;
+    width: 0.5rem;
+    height: 100%;
+    position: absolute;
+    background: var(--color-primary);
+}
+.left .sidebar-2 .menu-item-2:first-child.active{
+border-top-left-radius: var(--card-border-radius);
+overflow: hidden;
+}
+.left .sidebar-2 .menu-item-2:last-child.active{
+    border-bottom-left-radius: var(--card-border-radius);
+    overflow: hidden;
+    }
+    .left .btn{
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    }
+    .left .notifications-popup-2{
+        position: absolute;
+        top: 0;
+        left: 110%;
+        width: 30rem;
+        color: var(--color-dark);
+        background: var(--color-white);
+        border-radius: var(--card-border-radius);
+        padding: var(--card-padding);
+        box-shadow: 0 0 2rem hsl(var(--color-primary),75%, 60%, 25%);
+        z-index: 8;
+        display: none;
+    }
+    .left .notifications-popup-2::before{
+        content: '';
+        width: 1.2rem;
+        height: 1.2rem;
+        display: block;
+        background: white;
+        position: absolute;
+        left: -0.6rem;
+        transform: rotate(45deg);
+    }
+    .left .notifications-popup-2 > div{
+        display: flex;
+        align-items: start;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+    .left .notifications-popup-2 small{
+        display: block;
+    }
+
+    /* ***************************** */

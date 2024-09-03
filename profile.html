@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pistagram</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Boxicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h2 class="logo">
+                Pistagram
+            </h2>
+
+            
+            <div class="create">
+                <div class="handle">
+                    <h4 class="text-dark">Burhanuddin Moris</h4>
+                    <p class="text-muted">@moriswalab</p>
+                </div>
+                <div class="profile-photo">
+                    <img src="/imgs/profile-8.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+       <!--------- Main ------- -->
+       <main>
+        <div class="container">
+            <!-- left -->
+            <div class="left">
+                
+                <div class="sidebar">
+                    <a href="/html/index.html" class="menu-item active">
+                        <span><i class='bx bx-home'></i></span>
+                        <h3>Home</h3>
+                    </a>
+                    <a href="#" class="menu-item ">
+                        <span><i class='bx bx-compass'></i> </span>
+                        <h3>Explore</h3>
+                    </a>
+                    <a href="#" class="menu-item " id="Notifications">
+                        <span><i class='bx bx-bell'><small class="Notification-count">9+</small></i>
+                        </span>
+                        <h3>Notifications</h3>
+                        <!-- Notifications -->
+                        <div class="notifications-popup">
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="/imgs/profile-2.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <strong>cake banjamain</strong> accepted your follow request
+                                    <small class="text-muted">2 DAYS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="/imgs/profile-3.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <strong>Abraham Linken</strong> commented on your post
+                                    <small class="text-muted">1 HOUR AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="/imgs/profile-4.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <strong>Chakli</strong> commented on your post
+                                    <small class="text-muted">1 HOUR AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="/imgs/profile-5.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <strong>Chriyanka Popra</strong> commented on your post
+                                    <small class="text-muted">2 HOURs AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="/imgs/profile-6.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <strong>Ronaldo Patel</strong> liked your story
+                                    <small class="text-muted">1 DAY AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="/imgs/profile-7.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <strong>Burhnauddin</strong> liked your story
+                                    <small class="text-muted">1 HOUR AGO</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="menu-item " id="messages-notifications">
+                        <span><i class='bx bx-comment-dots'><small class="Notification-count">6</small></i>
+
+                        </span>
+                        <h3>Messages</h3>
+                    </a>
+                    <a href="#" class="menu-item ">
+                        <span><i class='bx bx-bookmark'></i>
+
+                        </span>
+                        <h3>Bookmarks</h3>
+                    </a>
+                    <a href="#" class="menu-item ">
+                        <span><i class='bx bx-coin-stack'></i>
+
+                        </span>
+                        <h3>Analytics</h3>
+                    </a>
+                    <a href="#" class="menu-item ">
+                        <span><i class='bx bx-check-circle' id="theme"></i>
+
+                        </span>
+                        <h3>Theme</h3>
+                    </a>
+                    <a href="#" class="menu-item ">
+                        <span><i class='bx bxs-cog'></i>
+
+                        </span>
+                        <h3>Settings</h3>
+                    </a>
+                </div>
+                <!-- End of the sidebar -->
+                <label for="create-post" class="btn btn-primary">Create Post</label>
+
+            </div>
+            <!-- middle -->
+            <div class="middle">
+              
+                <div class="profile">
+                    <div class="profile-header">
+                        <div class="profile-photo"><img src="/imgs/profile-8.jpg" alt=""></div>
+                        <div class="profile-info">
+                            <h1 class="profile-name">Burhanuddin Moris</h1>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="follow">
+                    <h6 class="text-dark followers">147 followers</h6>
+                    <h6 class="text-dark followers">100 following</h6>
+                </div>
+                <div class="follow">
+                    <button class=" btn btn-primary">Edit profile</button>
+                    <button class=" btn btn-primary">Share profile</button>
+                </div>
+                
+                
+               
+                <h1 class="text-bold">Your posts</h1>
+                <!-- Feed -->
+                <div class="feeds">
+                    
+                    
+                    
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="/imgs/profile-8.jpg" alt="">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Burhanuddin Moris</h3>
+                                    <small>GUJARAT 15 MINUTES AGO</small>
+                                </div>
+
+                            </div>
+                            <span class="edit">
+                                <h3>...</h3>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="/imgs/feed-me.jpeg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class='bx bx-heart'></i></span>
+                                <span><i class='bx bx-message-rounded'></i></span>
+                                <span><i class='bx bxs-share-alt'></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class='bx bx-bookmark'></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="/imgs/profile-10.jpg" alt=""></span>
+                            <span><img src="/imgs/profile-11.jpg" alt=""></span>
+                            <span><img src="/imgs/profile-4.jpg" alt=""></span>
+                            <p>Liked by <b>Chriyanka Popra</b> and <b> 233 others </b> </p>
+
+                        </div>
+                        <div class="caption">
+                            <p><b>Burhanuddin</b> Sky
+                                <span class="hash-tag">#skypics</span>
+                            </p>
+                        </div>
+                        <div class="text-muted comments">View all 276 comments</div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- right -->
+            <div class="right">
+                <div class="messages">
+                    <div class="heading">
+                        <h4>Messages</h4>
+                        <span><i class='bx bx-edit'></i></span>
+                    </div>
+
+                    <div class="search-bar">
+                        <i class='bx bx-search'></i>
+                        <input type="search" placeholder="Search Messages" id="message-search">
+                    </div>
+
+                    <div class="category">
+                        <h6 class="active">Primary</h6>
+                        <h6>General</h6>
+                        <h6 class="message-requests">Requests(7)</h6>
+                    </div>
+
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="/imgs/profile-5.jpg" alt="">
+                        </div>
+                        <div class="message-body">
+                            <h5>Amber</h5>
+                            <p class="text-muted">Just wake up bruh!</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="/imgs/profile-6.jpg" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Daisy Trace</h5>
+                            <p class="text-muted">Yoo Whats uppp</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="/imgs/profile-10.jpg" alt="">
+                        </div>
+                        <div class="message-body">
+                            <h5>Ronaldo</h5>
+                            <p class="text-muted">ok</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="/imgs/profile-12.jpg" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Dolly Polly</h5>
+                            <p class="text-bold">4+ messages</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="/imgs/profile-16.jpg" alt="">
+                        </div>
+                        <div class="message-body">
+                            <h5>Amber</h5>
+                            <p class="text-bold">??</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="friend-requests">
+                    <h4>Requests</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="/imgs/profile-13.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Hajiya Bintu</h5>
+                                <p class="text-muted">
+                                    8 mutual friends
+                                </p>
+
+                            </div>
+
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn ">Decline</button>
+                        </div>
+                    </div>
+
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="/imgs/profile-20.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Kaki kalelkar</h5>
+                                <p class="text-muted">
+                                    10 mutual friends
+                                </p>
+
+                            </div>
+
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn ">Decline</button>
+                        </div>
+                    </div>
+
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="/imgs/profile-11.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Himanshu Clark</h5>
+                                <p class="text-muted">
+                                    9 mutual friends
+                                </p>
+
+                            </div>
+
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn ">Decline</button>
+                        </div>
+                    </div>
+
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="/imgs/profile-17.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Rani Vicky</h5>
+                                <p class="text-muted">
+                                    2 mutual friends
+                                </p>
+
+                            </div>
+
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn ">Decline</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!-- Theme Customization -->
+    <div class="customize-theme">
+        <div class="card">
+            <h2>Customize Your View</h2>
+            <p class="text-muted">Manage Your Font Size, Color And Background</p>
+
+            <div class="font-size">
+                <h4>Font Size</h4>
+                <div>
+                    <h6>Aa</h6>
+                    <div class="choose-size">
+                        <span class="font-size-1"></span>
+                        <span class="font-size-2 active"></span>
+                        <span class="font-size-3"></span>
+                        <span class="font-size-4"></span>
+                        <span class="font-size-5"></span>
+                    </div>
+                    <h3>Aa</h3>
+                </div>
+            </div>
+
+            <div class="color">
+                <h4>Color</h4>
+                <div class="choose-color">
+                    <span class="color-1 active"></span>
+                    <span class="color-2"></span>
+                    <span class="color-3"></span>
+                    <span class="color-4"></span>
+                    <span class="color-5"></span>
+                </div>
+            </div>
+
+            <div class="background">
+                <h4>Background</h4>
+                <div class="choose-bg">
+                    <div class="bg-1 active">
+                        <span></span>
+                        <h5 for="bg-1">Light</h5>
+                    </div>
+                    <div class="bg-2">
+                        <span></span>
+                        <h5>Dim</h5>
+                    </div>
+                    <div class="bg-3">
+                        <span></span>
+                        <h5 for="bg-3">Lights Outs</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="/javascript/home.js"></script>
+</body>
+</html>
+
+
+
+<div class="sidebar-2">
+    <a href="#" class="menu-item-2 active">
+        <span><i class='bx bx-home'></i></span>
+        <h3>Home</h3>
+    </a>
+    <a href="#" class="menu-item-2">
+        <span><i class='bx bx-compass'></i> </span>
+        <h3>Explore</h3>
+    </a>
+    <a href="#" class="menu-item-2" id="Notifications-2">
+        <span><i class='bx bx-bell'><small class="Notification-count-2">9+</small></i>
+        </span>
+        <h3>Notifications</h3>
+        <!-- Notifications -->
+        <div class="notifications-popup-2">
+            <div>
+                <div class="profile-photo-2">
+                    <img src="/imgs/profile-2.jpg" alt="">
+                </div>
+                <div class="notification-body-2">
+                    <strong>cake banjamain</strong> accepted your follow request
+                    <small class="text-muted">2 DAYS AGO</small>
+                </div>
+            </div>
+            <div>
+                <div class="profile-photo-2">
+                    <img src="/imgs/profile-3.jpg" alt="">
+                </div>
+                <div class="notification-body-2">
+                    <strong>Abraham Linken</strong> commented on your post
+                    <small class="text-muted">1 HOUR AGO</small>
+                </div>
+            </div>
+            <div>
+                <div class="profile-photo-2">
+                    <img src="/imgs/profile-4.jpg" alt="">
+                </div>
+                <div class="notification-body-2">
+                    <strong>Chakli</strong> commented on your post
+                    <small class="text-muted">1 HOUR AGO</small>
+                </div>
+            </div>
+            <div>
+                <div class="profile-photo-2">
+                    <img src="/imgs/profile-5.jpg" alt="">
+                </div>
+                <div class="notification-body-2">
+                    <strong>Chriyanka Popra</strong> commented on your post
+                    <small class="text-muted">2 HOURs AGO</small>
+                </div>
+            </div>
+            <div>
+                <div class="profile-photo-2">
+                    <img src="/imgs/profile-6.jpg" alt="">
+                </div>
+                <div class="notification-body-2">
+                    <strong>Ronaldo Patel</strong> liked your story
+                    <small class="text-muted">1 DAY AGO</small>
+                </div>
+            </div>
+            <div>
+                <div class="profile-photo-2">
+                    <img src="/imgs/profile-7.jpg" alt="">
+                </div>
+                <div class="notification-body-2">
+                    <strong>Burhnauddin</strong> liked your story
+                    <small class="text-muted">1 HOUR AGO</small>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a href="#" class="menu-item-2 " id="messages-notifications-2">
+        <span><i class='bx bx-comment-dots'><small class="Notification-count">6</small></i>
+
+        </span>
+        <h3>Messages</h3>
+    </a>
+    <a href="#" class="menu-item-2 ">
+        <span><i class='bx bx-bookmark'></i>
+
+        </span>
+        <h3>Bookmarks</h3>
+    </a>
+    <a href="#" class="menu-item-2 ">
+        <span><i class='bx bx-coin-stack'></i>
+
+        </span>
+        <h3>Analytics</h3>
+    </a>
+    <a href="#" class="menu-item-2 ">
+        <span><i class='bx bx-check-circle' id="theme"></i>
+
+        </span>
+        <h3>Theme</h3>
+    </a>
+    <a href="#" class="menu-item-2 ">
+        <span><i class='bx bxs-cog'></i>
+
+        </span>
+        <h3>Settings</h3>
+    </a>
+</div>
+<!-- End of the sidebar -->
+<label for="create-post" class="btn btn-primary">Create Post</label>

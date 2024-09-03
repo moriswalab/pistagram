@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pistagram</title>
+    <link rel="stylesheet" href="/css/style1.css">
+    <!-- Boxicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h2 class="logo">
+                Pistagram
+            </h2>
+
+            <div class="search-bar">
+                <i class='bx bx-search'></i>
+                <input type="search" placeholder="Search for creators,inspirations and projects">
+            </div>
+            <div class="create">
+                <label for="create-post" class="btn btn-primary">Create</label>
+                <div class="profile-photo">
+                    <a href="profile.html">
+                        <img src="/imgs/profile-8.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')">
+            <div class="message">
+            <div class="profile-photo">
+                <img src="/imgs/profile-5.jpg" alt="">
+            </div>
+            <div class="message-body">
+                <h5>Amber</h5>
+                
+            </div>
+        </div></button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+      </div>
+      
+      <div id="London" class="tabcontent">
+        <p class="text-muted">Just wake up bruh!</p>
+      </div>
+      
+      <div id="Paris" class="tabcontent">
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p>
+      </div>
+      
+      <div id="Tokyo" class="tabcontent">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+      <script>
+        function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the link that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+      </script>
+</body>
+</html>
